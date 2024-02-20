@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, black, rgb(129, 129, 129));
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+}
+.logo {
+  color: white;
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+  transition: 3s;
+}
+
+.logo span {
+  color: orangered;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline;
+  padding: 10px 20px;
+  transition: right 0.3s;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: orangered;
+  border-bottom: 1px solid white;
+  transition: 0.1s;
+}
+button {
+  border: none;
+  background: orangered;
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  transition: 0.3s;
+}
+button:hover {
+  background: white;
+  color: orangered;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.home {
+  width: 100%;
+  height: 85vh;
+  color: white;
+  display: flex;
+
+  margin: 0;
+}
+.right {
+  width: 50%;
+  height: 100%;
+  background-image: url(holllo-removebg-preview.png);
+  background-size: cover;
+  background-position: center;
+
+  border: none;
+}
+.left {
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 50px;
+}
+.left p {
+  padding-top: 40px;
+  padding-right: 90px;
+  font-size: 18px;
+}
+.details p {
+  padding: 0;
+  color: orangered;
+  font-size: 20px;
+}
+.details h1 {
+  font-size: 50px;
+}
+input {
+  border: none;
+  background: orangered;
+  padding: 12px 40px;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  transition: 0.3s;
+  margin-top: 40px;
+}
+input:hover {
+  background: white;
+  color: orangered;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.social {
+  margin: 20px 0;
+}
+.social a {
+  color: white;
+  padding-left: 10px;
+  font-size: 40px;
+}
+
+main {
+  position: relative;
+}
+.next-page {
+  font-size: 3rem;
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+}
+
+/* .home-sci {
+  position: absolute;
+  bottom: 30px;
+  width: 170px;
+  margin-left: 55px;
+  display: flex;
+  justify-content: space-between;
+}
+.home-sci a {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  border: 2px solid orangered;
+  border-radius: 50%;
+  justify-content: center;
+  color: orangered;
+  align-items: center;
+  text-decoration: none;
+} */
+
+@media (width < 750px) {
+  nav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  .logo {
+    margin: 0;
+    padding: 0;
+  }
+  ul {
+    display: block;
+  }
+}
