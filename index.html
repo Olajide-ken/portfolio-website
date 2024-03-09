@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Menu</title>
     <link rel="stylesheet" href="Home.css" />
     <link
@@ -12,12 +19,12 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="">
         <div class="logo">
           <h2>Wealth<span>Web</span></h2>
         </div>
-        <ul>
-          <li><a href="#">Home</a></li>
+        <ul class="nav-links nav-active hidden">
+          <li><a href="#" class="present">Home</a></li>
           <li><a href="About.html">About</a></li>
           <li><a href="service.html">Service</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
@@ -25,6 +32,8 @@
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
         <button type="button">Subscribe</button>
+        <i id="hamburger" class="bx bx-menu"></i>
+        <p class="nav-close hidden">&times;</p>
       </nav>
     </header>
 
@@ -46,13 +55,22 @@
         <input type="button" value="Hire Me" />
         <input type="button" value="Let's Talk" />
         <div class="social">
-          <a href="#"><i class="bx bxl-facebook-circle"></i></a>
-          <a href="#"><i class="bx bxl-instagram"></i></a>
-          <a href="#"><i class="bx bxl-twitter"></i></a>
+          <a href="#">
+            <i class="bx bxl-facebook-circle"></i>
+          </a>
+          <a href="#">
+            <i class="bx bx bxl-instagram"></i>
+          </a>
+          <a href="https://twitter.com">
+            <i class="bx bxl-twitter"></i>
+          </a>
         </div>
       </div>
-      <div class="right"></div>
+      <div class="right">
+        <img src="./holllo-removebg-preview.png" alt="" />
+      </div>
       <a class="next-page" href="About.html">&rarr;</a>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>

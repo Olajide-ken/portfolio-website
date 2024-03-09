@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="Home.css" />
     <title>Document</title>
   </head>
@@ -16,12 +20,21 @@
           <li><a href="Home.html">Home</a></li>
           <li><a href="About.html">About</a></li>
           <li><a href="service.html">Service</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="portfolio.html" class="present">Portfolio</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
         <button type="button">Subscribe</button>
+        <i id="hamburger" class="bx bx-menu"></i>
       </nav>
     </header>
+    <main>
+      <div class="portfolio">
+        <h2>Latest <span style="color: white">Projects</span></h2>
+      </div>
+    </main>
+    <a class="previous-page" href="service.html">&larr;</a>
+    <a class="next-page" href="blog.html">&rarr;</a>
+    <script src="script.js"></script>
   </body>
 </html>

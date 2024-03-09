@@ -5,15 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="Home.css" />
     <title>Document</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="">
         <div class="logo">
           <h2>Wealth<span>Web</span></h2>
         </div>
-        <ul>
-          <li><a href="Home.html">Home</a></li>
+        <ul class="nav-links nav-active hidden">
+          <li><a href="#" class="present">Home</a></li>
           <li><a href="About.html">About</a></li>
           <li><a href="service.html">Service</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
@@ -21,10 +25,32 @@
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
         <button type="button">Subscribe</button>
+        <i id="hamburger" class="bx bx-menu"></i>
+        <p class="nav-close hidden">&times;</p>
       </nav>
     </header>
+
     <main>
-      <h1 style="color: white">WELCOME!!</h1>
+      <div class="about">
+        <h2>About <span style="color: white">Me</span></h2>
+
+        <p>
+          As a web developer, I started my career as a Frontend Developer in the
+          year 2021,I specialize in creating a website and I like to code things
+          from scratch, and enjoy bringing ideas to life in the browser.I have
+          an extensive experience working with UI/US Designers, Product
+          Managers,Developers and other stake holders to gather
+          requirements,create functional user-friendly website, Mobile
+          Applications and web Applications. I have achieved several milestones,
+          including developing a successful running Websites, Web applications
+          and moblie Applications that have received positive feedback from user
+          and stakeholders.
+        </p>
+        <button>More About Me</button>
+      </div>
     </main>
+    <a class="previous-page" href="Home.html">&larr;</a>
+    <a class="next-page" href="service.html">&rarr;</a>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="Home.css" />
     <title>Document</title>
   </head>
@@ -15,13 +19,49 @@
         <ul>
           <li><a href="Home.html">Home</a></li>
           <li><a href="About.html">About</a></li>
-          <li><a href="service.html">Service</a></li>
+          <li><a href="service.html" class="active">Service</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
         <button type="button">Subscribe</button>
+        <i id="hamburger" class="bx bx-menu"></i>
       </nav>
     </header>
+    <main>
+      <div class="service">
+        <h2>My <span style="color: white">service</span></h2>
+        <div class="categories">
+          <div class="card">
+            <h3>Web Design</h3>
+            <p>
+              We are dedicated to providing high-quality web design services
+              that are tailored to meet specific needs of our clients
+            </p>
+            <button>Read more...</button>
+          </div>
+          <div class="card">
+            <h3>Web Development</h3>
+            <p>
+              We use the latest web technologies and development tools to create
+              website that are fast, secure, and scalable for users.
+            </p>
+            <button>Read more...</button>
+          </div>
+          <div class="card-c">
+            <h3>Creative Design</h3>
+            <p>
+              Our approach is collaborative,and we encourage your feedback
+              throughout the design process to ensure that we are meeting your
+              expectations.
+            </p>
+            <button>Read more...</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <a class="previous-page" href="About.html">&larr;</a>
+    <a class="next-page" href="portfolio.html">&rarr;</a>
+    <script src="script.js"></script>
   </body>
 </html>
